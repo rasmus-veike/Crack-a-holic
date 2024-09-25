@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutdown Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('assets/shutdown.jpg');
+            background-size: cover;
+            background-position: center;
+            transition: background-color 2s ease;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = new Audio('assets/shutdown-sound.mp3');
+            audio.play().then(() => {
+                setTimeout(() => {
+                    window.close(); // Aken suletakse
+                }, 3000);
+            })
+        });
+    </script>
+</body>
+
+</html>

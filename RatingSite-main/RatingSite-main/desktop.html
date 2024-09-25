@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <link rel="stylesheet" type="text/css" href="star.css">
+    <link rel="stylesheet" type="text/css" href="assets/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/desktop.css">
+    <script src="main.js"></script>
+    <title>hinnang</title>
+</head>
+
+<body>
+
+    <div class="desktop">
+
+        <div class="icon note-pad">
+            <img src="assets/notepad.png">
+            <div class="icon-name">Hinnang.txt</div>
+        </div>
+        <div class="icon recycle-bin">
+            <img src="assets/recycle.png">
+            <div class="icon-name">Recycle Bin</div>
+        </div>
+        <div class="bonzi-container">
+            <img src="assets/bonzi2.gif" alt="Bonzi" class="bonzi-gif">
+            <div id="bonzi-message" class="bonzi-message" style="display: none;">
+                Tagasiside on esitatud! Aitäh!
+            </div>
+        </div>
+    </div>
+
+    <div class="window">
+        <div class="title-bar">
+            <div><img src="assets/notepad.png"> Hinnang.txt</div>
+            <div class="controls">
+                <button class="cls"></button>
+                <button class="max"></button>
+                <button class="min"></button>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <span>File</span>
+            <span>Edit</span>
+            <span>Format</span>
+            <span>View</span>
+            <span>Help</span>
+        </div>
+        <div class="form-container">
+            <!-- grupi valimine -->
+            <label for="group-select">Vali enda grupp:</label>
+            <select id="group-select">
+                <option value="">--Vali grupp--</option>
+                <option value="TA-22E">TA-22E</option>
+                <option value="TA-22V">TA-22V</option>
+                <option value="MM-22">MM-22</option>
+            </select>
+            <br><br>
+
+            <!-- tunni valimine -->
+            <label for="course-select">Vali aine:</label>
+            <select id="course-select">
+                <option value="">--Vali aine--</option>
+                <option value="Matemaatika">Matemaatika</option>
+                <option value="Programmeerimine">Programmeerimine</option>
+                <option value="Logelemine">Logelemine</option>
+            </select>
+            <br><br>
+
+            <!-- rating -->
+            <label for="rating">Hinnang:</label>
+            <div class="star-rating">
+                <span class="star" data-value="5">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="1">★</span>
+            </div>
+            <br><br>
+
+            <!-- Description -->
+            <label for="description">Tagasiside:</label><br>
+            <textarea id="description" rows="4" cols="50" placeholder="Kirjuta tagasiside..."></textarea>
+            <br><br>
+
+            <!-- Submit Button -->
+            <button id="submit-btn">Esita tagasiside</button>
+
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <div class="start-button"><img src="assets/logo.svg"> log out</div>
+
+        <div class="opened-tabs">
+
+            <div class="open-tab readme active"><img src="assets/notepad.png"> Hinnang.txt</div>
+        </div>
+
+        <div class="time">11:20 PM</div>
+    </div>
+
+    <script src="assets/desktop.js"></script>
+
+
+
+
+</body>
+
+</html>
